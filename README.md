@@ -1,15 +1,15 @@
 # Tumblr-PhotoFeed
-# Lab 1 - *Name of App Here*
+# Lab 1 - photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
 **Name of your app** is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
-Time spent: **X** hours spent in total
+Time spent: 8 hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [ ] User can scroll through a feed of images returned from the Tumblr API (5pts)
+- [X] User can scroll through a feed of images returned from the Tumblr API (5pts)
 
 The following **optional** user stories are implemented:
 
@@ -39,9 +39,11 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+Some of the challenges 
+
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2018] [Sarah Villegas, Noé Lomelí]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
