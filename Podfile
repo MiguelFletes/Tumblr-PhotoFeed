@@ -10,7 +10,7 @@ target 'Tumblr-PhotoFeed' do
   # Add additional dependencies
   pod 'OAuthSwift' #, '~> 1.1.0'
   pod 'OAuthSwiftAlamofire'
-
+ pod 'AlamofireImage'
   # Pods for Tumblr-PhotoFeed
 
   target 'Tumblr-PhotoFeedTests' do

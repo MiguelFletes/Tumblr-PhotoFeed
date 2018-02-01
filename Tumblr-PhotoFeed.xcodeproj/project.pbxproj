@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1009F058202278F10084FF98 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009F057202278F10084FF98 /* PhotoCell.swift */; };
 		1049F412201FD6FE006F1DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1049F411201FD6FE006F1DC3 /* AppDelegate.swift */; };
 		1049F417201FD6FE006F1DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1049F415201FD6FE006F1DC3 /* Main.storyboard */; };
 		1049F419201FD6FE006F1DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1049F418201FD6FE006F1DC3 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1009F057202278F10084FF98 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		1049F40E201FD6FE006F1DC3 /* Tumblr-PhotoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tumblr-PhotoFeed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1049F411201FD6FE006F1DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1049F416201FD6FE006F1DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				1049F441201FDE0E006F1DC3 /* View Controllers */,
 				1049F411201FD6FE006F1DC3 /* AppDelegate.swift */,
 				1049F415201FD6FE006F1DC3 /* Main.storyboard */,
+				1009F057202278F10084FF98 /* PhotoCell.swift */,
 				1049F418201FD6FE006F1DC3 /* Assets.xcassets */,
 				1049F41A201FD6FE006F1DC3 /* LaunchScreen.storyboard */,
 				1049F41D201FD6FE006F1DC3 /* Info.plist */,
@@ -335,12 +338,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tumblr-PhotoFeed/Pods-Tumblr-PhotoFeed-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/OAuthSwiftAlamofire/OAuthSwiftAlamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwiftAlamofire.framework",
 			);
@@ -471,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1049F412201FD6FE006F1DC3 /* AppDelegate.swift in Sources */,
+				1009F058202278F10084FF98 /* PhotoCell.swift in Sources */,
 				1049F440201FDDDB006F1DC3 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
