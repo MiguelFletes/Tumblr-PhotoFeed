@@ -1,7 +1,4 @@
-# Tumblr-PhotoFeed
 # Lab 1 - photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
-
-**Name of your app** is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
 Time spent: 8 hours spent in total
 
@@ -24,8 +21,8 @@ The following **additional** user stories are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Discuss if the UITableView have their rows automatic depending on content then why is it that content is still displayed in fixed dimentions.
+2. Can a view controller become any type of UI compnet? 
 
 ## Video Walkthrough
 
@@ -35,7 +32,7 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-<img src='https://imgur.com/a/h9lg3' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/3o7WIqMNGkYdAnOf0A/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 ## Notes
 
 Describe any challenges encountered while building the app.
