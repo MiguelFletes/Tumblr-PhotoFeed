@@ -14,6 +14,8 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var photoTableView: UITableView!
     
     var posts: [[String: Any]] = []
+    var curPost: [String: Any] = [:]
+    //var curURL: String
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +63,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = photoTableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
         
         let post = posts[indexPath.row]
-        
+        curPost = post
         // 1.            // 2.          // 3.
         if let photos = post["photos"] as? [[String: Any]] {
             // photos is NOT nil, we can use it!
@@ -73,6 +75,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             let originalSize = photo["original_size"] as! [String: Any]
             // 3.
             let urlString = originalSize["url"] as! String
+            //curURL = originalSize["url"] as! String
             // 4.
             let url = URL(string: urlString)
             
@@ -88,6 +91,12 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         // Configure YourCustomCell using the outlets that you've defined.
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationViewController = segue.destination as! PhotoDetailsViewController
+       // destinationViewController.URLstr = URL(string: curURL)!
+       // destinationViewController.dataPost = self.curPost
     }
     /*
     // MARK: - Navigation
