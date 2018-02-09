@@ -125,7 +125,6 @@
 				1049F418201FD6FE006F1DC3 /* Assets.xcassets */,
 				1049F41A201FD6FE006F1DC3 /* LaunchScreen.storyboard */,
 				1049F41D201FD6FE006F1DC3 /* Info.plist */,
-				80F23FE6202BB1BD006CC415 /* PhotoDetailsViewController.swift */,
 			);
 			path = "Tumblr-PhotoFeed";
 			sourceTree = "<group>";
@@ -151,6 +150,7 @@
 		1049F441201FDE0E006F1DC3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				80F23FE6202BB1BD006CC415 /* PhotoDetailsViewController.swift */,
 				1049F43F201FDDDB006F1DC3 /* PhotosViewController.swift */,
 			);
 			path = "View Controllers";

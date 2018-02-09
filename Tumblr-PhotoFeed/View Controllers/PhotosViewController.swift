@@ -32,8 +32,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
                 print(error.localizedDescription)
             } else if let data = data,
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                print(dataDictionary)
-                
+            
                 // TODO: Get the posts and store in posts property
                 // Get the dictionary from the response key
                 let responseDictionary = dataDictionary["response"] as! [String: Any]
@@ -94,18 +93,13 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Sends the Photo that what clicked
         let destinationViewController = segue.destination as! PhotoDetailsViewController
-       // destinationViewController.URLstr = URL(string: curURL)!
-       // destinationViewController.dataPost = self.curPost
+        let cell = sender as! PhotoCell
+        destinationViewController.newPhoto = cell.iv1.image
+       
+        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
